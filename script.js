@@ -16,13 +16,13 @@ toggle3D.addEventListener('click', function() {
   if (is3D) {
     mainImage.style.display = 'none';
     mainModel.style.display = '';
-    toggle3D.textContent = 'IMG';
-    toggle3D.title = 'Switch to image view';
+    toggle3D.textContent = '3D';
+    toggle3D.title = 'Currently showing 3D model';
   } else {
     mainImage.style.display = '';
     mainModel.style.display = 'none';
-    toggle3D.textContent = '3D';
-    toggle3D.title = 'Switch to 3D view';
+    toggle3D.textContent = 'IMG';
+    toggle3D.title = 'Currently showing image';
   }
 });
 
