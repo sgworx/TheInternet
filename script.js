@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const imageSelect = document.getElementById("imageSelect");
 const captionInput = document.getElementById("captionInput");
 const mainImage = document.getElementById("mainImage");
@@ -88,3 +89,4 @@ captionInput.addEventListener("input", function () {
 
 // On load, ensure image is shown
 showImage();
+});
