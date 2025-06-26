@@ -8,12 +8,13 @@ body {
   max-width: 500px;
   position: fixed;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  transform: none;
   text-align: right;
   z-index: 1;
   background: transparent;
   margin: 0;
+  padding: 1.5rem 2rem 0 0;
 }
 
 .image-container {
