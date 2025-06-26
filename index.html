@@ -5,25 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Interactive Image</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/three@0.154.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.154.0/examples/js/loaders/GLTFLoader.js"></script>
 </head>
 <body>
+  <div class="image-container">
+    <img id="mainImage" src="assets/Option1.png" alt="Selected image" />
+    <canvas id="threeCanvas" style="display:none; width:100%; height:100%; position:absolute; top:0; left:0;"></canvas>
+    <button id="toggle3D" class="toggle-3d-btn" title="Switch to 3D view">3D</button>
+  </div>
   <div class="container">
     <h1>Interactive Image</h1>
     
     <label for="imageSelect">Choose an image:</label>
     <select id="imageSelect">
-      <option value="assets/Option1.png">Option 1</option>
-      <option value="assets/Option2.png">Option 2</option>
-      <option value="assets/Option3.png">Option 3</option>
+      <option value="assets/Option1.png" data-glb="assets/op1.glb">Option 1</option>
+      <option value="assets/Option2.png" data-glb="assets/op2.glb">Option 2</option>
+      <option value="assets/Option3.png" data-glb="assets/op3.glb">Option 3</option>
     </select>
 
     <label for="captionInput">Write a caption:</label>
     <input type="text" id="captionInput" placeholder="Type a caption..." />
 
-    <div class="image-container">
-      <img id="mainImage" src="assets/Option1.png" alt="Selected image" />
-      <p id="caption">Type a caption...</p>
-    </div>
+    <p id="caption">Type a caption...</p>
   </div>
 
   <script src="script.js"></script>
