@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 1rem;
+}
+
+.image-container p {
+  font-style: italic;
+  margin-top: 0.5rem;
+}
